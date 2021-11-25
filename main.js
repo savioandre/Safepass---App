@@ -212,7 +212,6 @@ btn_mobile.addEventListener('click', () => {
         document.querySelector('.bar_mobile').classList.remove('active_bar')
         document.querySelector('body').style.overflowY = "auto"
         btn_mobile.classList.add('act_m')
-
     }
 })
 

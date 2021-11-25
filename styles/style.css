@@ -23,6 +23,10 @@ nav {
     z-index: 100;
 }
 
+.logo {
+    z-index: 2;
+}
+
 .Bar {
     display: flex;
     justify-content: space-evenly;
@@ -333,6 +337,11 @@ nav {
     .B_m li a {
         color: #404B7C;
     }
+
+    .bar_mobile.active_bar {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 850px) {
@@ -346,6 +355,10 @@ nav {
 
     .bar_mobile.active_bar ul.Bar_active {
         display: flex;
+    }
+
+    .logo {
+        z-index: 0;
     }
 }
 

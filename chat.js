@@ -99,6 +99,9 @@ function InsertOptMenuFooter() {
     REA.innerHTML = OPT
     document.querySelector('.main_opt').appendChild(REA)
     CallName()
+
+    document.querySelector('.m_help')
+        .setAttribute("disabled", "true")
 }
 
 form.addEventListener('submit', function (e) {
@@ -120,6 +123,14 @@ OPEN.addEventListener('click', () => {
     OPEN.style.opacity = 0
     document.querySelector('.chat')
         .classList.add('active-chat')
+
+    if(document.querySelector('.chat')) {
+        document.querySelector('body')
+        .style.overflowY = "auto"
+    } else if ('.chat.active-chat') {
+        document.querySelector('body')
+        .style.overflowY = "hidden"
+    }
 })
 
 const CLOSE = document.querySelector('.close_chat')
